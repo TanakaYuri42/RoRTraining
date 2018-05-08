@@ -1,0 +1,11 @@
+<h1>Members#index</h1>
+<p>Find me in app/views/members/index.html.erb</p>
+<%= @members %>
+<h2><% @members.each do |n| %></h2>
+  ID: <%= n.id %><br>
+  名前: <%= n.name %>
+  年齢: <%= n.age %><br>
+  
+  <%= link_to "delete","#{n.id}/delete", method: :delete , data:{confirm:"本当に消しますか？"} %>
+  
+<% end %>

@@ -1,0 +1,8 @@
+<h1>Members#show</h1>
+<p>Find me in app/views/members/show.html.erb</p>
+名前: <%= @member.name %><br>
+年齢: <%= @member.age %>
+
+<%= form_for @member, url:'update' do |f| %>
+<!-- %= f.submit "編集", class:"btn btn-primary" % -->
+<% end %>

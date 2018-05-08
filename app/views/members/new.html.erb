@@ -1,0 +1,12 @@
+<h1>Members#new</h1>
+<p>Find me in app/views/members/new.html.erb</p>
+
+<%= form_for @member, url:'create' do |f| %>
+  <%= f.label :name %><br>
+  <%= f.text_field f.name %><br>
+  
+  <%= f.label :age %><br>
+  <%= f.number_field f.age %><br><br>
+  
+  <%= f.submit "Create new member", class:"btn btn-primary" %>  
+<% end %>
